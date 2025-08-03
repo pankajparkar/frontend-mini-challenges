@@ -49,6 +49,10 @@ export const routes: Routes = [
           import('./challenges/word-count/word-count.component').then((m) => m.WordCountComponent),
         data: { title: 'Word count' },
       },
+      {
+        path: '**',
+        redirectTo: 'counter',
+      },
     ],
   },
 ];
